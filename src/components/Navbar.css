@@ -1,0 +1,52 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background: #005da9;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.linkStyle:hover {
+  animation: flash 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .linkStyle {
+    font-size: 1.2rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

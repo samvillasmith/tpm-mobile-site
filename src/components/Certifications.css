@@ -1,0 +1,45 @@
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  
+  .cert-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aws-cert {
+    max-width: 765px;
+  }
+  
+  .security-cert {
+    max-width: 750px;
+  }
+  
+  @media (max-width: 768px) {
+    .certifications-container {
+      flex-direction: column;
+    }
+  
+    .aws-cert,
+    .security-cert {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aws-cert,
+    .security-cert {
+      max-width: 100%;
+    }
+  }
+  
